@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- /* Form Section */ -->
+    <div class="form-section">
+      <h2>Resume Form</h2>
+      <form id="resumeForm">
+            <label>Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label>Phone:</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+
+            <label>Profile Summary:</label>
+            <textarea id="summary" placeholder="Short summary about you"></textarea>
+
+            <label>Education:</label>
+            <input type="text" id="education" placeholder="E.g. B.Tech in CSE">
+
+            <label>Skills (comma separated):</label>
+            <input type="text" id="skills" placeholder="HTML, CSS, JavaScript">
+
+            <label>Experience:</label>
+            <input type="text" id="experience" placeholder="E.g. Intern at XYZ">
+
+            <button type="button" onclick="clearForm()">Clear Form</button>
+      </form>
+    </div>
+
+    <!-- /* Resume Preview */ -->
+    <div class="preview-section">
+      <h2>Live Resume Preview</h2>
+      <div id="resumePreview" class="resume">
+        <h1 id="pName">Your Name</h1>
+        <p><strong>Email:</strong> <span id="pEmail">example@mail.com</span></p>
+        <p><strong>Phone:</strong> <span id="pPhone">+91 1234567890</span></p>
+        <h3>Profile Summary</h3>
+        <p id="pSummary">Short summary about you will appear here...</p>
+        <h3>Education</h3>
+        <p id="pEducation">Your education will appear here...</p>
+        <h3>Skills</h3>
+        <ul id="pSkills"></ul>
+        <h3>Experience</h3>
+        <p id="pExperience">Your work experience will appear here...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
